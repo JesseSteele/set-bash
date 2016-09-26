@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# This is my cool file that sets variables for settings-file
+
+# How to use:
+## ./set-variables [first variable] [second variable] [third variable]
+
+# Eg:
+## ./set-variables "Hello Dolly Spaces!" "#SpecialCharacter" ONE_WORD
+
+
+FIRST=$1
+SECOND=$2
+THIRD=$3
+
+sed -i "s/MY_FIRST_VARIABLE=.*/MY_FIRST_VARIABLE=\"${FIRST}\"/g" settings-file
+sed -i "s/MY_SECOND_VARIABLE=.*/MY_SECOND_VARIABLE=\"${SECOND}\"/g" settings-file
+sed -i "s/MY_THIRD_VARIABLE=.*/MY_THIRD_VARIABLE=\"${THIRD}\"/g" settings-file

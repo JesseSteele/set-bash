@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# This is my settings file I use in script.sh
+
+MY_FIRST_VARIABLE="I like apples."
+MY_SECOND_VARIABLE="Ubuntu kicks the llama's ass!"
+MY_THIRD_VARIABLE="NOT_SET"
